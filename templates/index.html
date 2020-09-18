@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Major Project</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+	<noscript>
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<span class="logo"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" /></span>
+			<h1>Retinal Diease Detection System..</h1>
+				built by <a href="https://www.codechef.com/teams/view/karhade2611">LazyCoders</a>
+			</p>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="#intro" class="active">Home</a></li>
+				<li><a href="#first">Classes</a></li>
+				<!--<li><a href="#second">Second Section</a></li>-->
+				<li><a href="#cta">Get Started</a></li>
+				<!-- <li><a href="#login">Login</a></li>-->
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+			<section id="intro" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Retinal Disease Detection System</h2>
+						</header>
+						<p>With the avail of <strong>Machine Learning</strong> techniques and
+						the advance technology capable of engendering
+						High-resolution images of the retina, it is now
+						possible to detect diseases afore they become too hard
+						to remedy. Early detection and treatment of the
+						diseases will greatly truncate the chances of perpetual
+						damage to the retina of the patients. In this project,
+						we will apply image processing and relegation on the
+						retinal OCT images utilizing Convolutional Neural
+						Network and different transfer learning algorithms
+						we relegate variants of retinal disease</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<span class="image"><img src="{{ url_for('static', filename='images/Eye.jpg') }}" alt="" /></span>
+				</div>
+			</section>
+
+			<!-- First Section -->
+			<section id="first" class="main special">
+				<header class="major">
+					<h2>Retinal Disease Classes</h2>
+				</header>
+				<ul class="features">
+					<li>
+						<span class="icon solid major style1 fa-code"></span>
+						<h3>CNV</h3>
+						<p><strong>Choroidal Neovascularization</strong> (CNV) involves the growth of new blood vessels that originate from the choroid through a break in the Bruch membrane into the sub–retinal pigment epithelium (sub-RPE) or subretinal space. CNV is a major cause of visual loss.</p>
+					</li>
+					<li>
+						<span class="icon major style3 fa-copy"></span>
+						<h3>DME</h3>
+						<p><strong>Diabetic Macular Edema</strong> (DME) is a complication of diabetes caused by fluid accumulation in the macula, or central portion of the eye, that causes the macula to swell.The macula is filled with cells that are responsible for sharp, straight ahead vision that helps with reading and driving.</p>
+					</li>
+					<li>
+						<span class="icon major style5 fa-gem"></span>
+						<h3>Drusen</h3>
+						<p><strong>Drusen</strong> are yellow deposits under the retina. Drusen are made up of lipids and proteins. Drusen likely do not cause age-related macular degeneration (AMD).  But having drusen increases a person’s risk of developing AMD. There are different kinds of drusen. </p>
+					</li>
+				</ul>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="https://en.wikipedia.org/wiki/Optical_coherence_tomography" class="button">Learn More</a></li>
+					</ul>
+				</footer>
+			</section>
+
+			<!-- Second Section 
+			<section id="second" class="main special">
+				<header class="major">
+					<h2>Ipsum consequat</h2>
+					<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+						posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+				</header>
+				<ul class="statistics">
+					<li class="style1">
+						<span class="icon solid fa-code-branch"></span>
+						<strong>5,120</strong> Etiam
+					</li>
+					<li class="style2">
+						<span class="icon fa-folder-open"></span>
+						<strong>8,192</strong> Magna
+					</li>
+					<li class="style3">
+						<span class="icon solid fa-signal"></span>
+						<strong>2,048</strong> Tempus
+					</li>
+					<li class="style4">
+						<span class="icon solid fa-laptop"></span>
+						<strong>4,096</strong> Aliquam
+					</li>
+					<li class="style5">
+						<span class="icon fa-gem"></span>
+						<strong>1,024</strong> Nullam
+					</li>
+				</ul>
+				<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus
+					hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus.
+					Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed
+					eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur
+					vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis
+					porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam
+					porta. Cras eu ornare dui curabitur lacinia.</p>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="generic.html" class="button">Learn More</a></li>
+					</ul>
+				</footer>
+			</section>
+				-->	
+			<!-- Get Started -->
+			<section id="cta" class="main special">
+				<form action="/api/signup" method="post">
+					<header class="major">
+						<h2>Register</h2>
+						<div class="row">
+						<div class="col-6 col-12-xsmall"><input  type="text" name="userid" id="name" value="" placeholder="Name"   size="15" required></div>
+						<div class="col-6 col-12-xsmall"><input  type="email" name="email" id="email" value="" placeholder="Email"  size="30" required></div>
+						<div style="margin-top: 1em" class="col-12"><input  type="password" name="password" id="pass" value="" placeholder="Password" size="10" required></div>
+					</div>
+					</header>
+					<footer class="major">
+						<input type="submit" value="SignIn" class="primary">
+						<input type="reset" value="Reset">
+					</footer>
+				</form>
+			</section>
+			<!--
+			<section id="login" class="main special">
+				<form action="/api/login" method="post">
+					<header class="major">
+						<h2>Login</h2>
+						<div class="row">
+							<div class="col-6 col-12-xsmall"><input  type="email" name="email" id="email" value="" placeholder="Email"  size="30" required></div>
+							<div class="col-6 col-12-xsmall"><input  type="password" name="password" id="pass" value="" placeholder="Password"></div>
+					</div>
+					</header>
+					<footer class="major">
+						<input type="submit" value="Login" class="primary">
+						<input type="reset" value="Forgot Password">
+					</footer>
+				</form>
+			</section>
+			-->
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>LazyCoder's</h2>
+				<p>LazyCoder's is a competitive coding team of the final year of Acropolis Institute of technology and research, Indore. They have interested in machine learning and deep learning and competitive programming and actively participate in the data science competitions and serval coding hackathons.</p>
+				<ul class="actions">
+					<li><a href="https://www.codechef.com/teams/view/karhade2611" class="button">Learn More</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Contacts Detail</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>Silicon Valley   &bull; USA</dd>
+					<dt>Phone</dt>
+					<dd>+657 8155156</dd>
+					<dt>Email</dt>
+					<dd><a href="#">lazyCoders@gmail.com</a></dd>
+				</dl>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">@lazyCoders</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
