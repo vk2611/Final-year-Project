@@ -98,7 +98,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = os.path.basename('pred_img')
 app.config['UPLOAD_FOLDER_DB'] = os.path.basename('static')
 app.config['MONGO_DBNAME'] = 'major'
-app.config['MONGO_URI'] = 'mongodb+srv://yogesh:qwertyuiop@cluster0-prw3a.mongodb.net/major?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = ''
 app.config['JWT_SECRET_KEY'] = 'xyzabc'
 app.config['JWT_TOKEN_LOCATION'] = ['cookies']
 app.config['JWT_COOKIE_CSRF_PROTECT'] = False
